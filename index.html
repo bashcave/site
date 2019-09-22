@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>BashCave | Open-Source Bash Library</title>
+    <meta name="twitter:description" content="BashCave is a collection of creative bash scripts to help organize and easify your workflow!">
+    <meta name="description" content="BashCave is a collection of creative bash scripts to help organize and easify your workflow!">
+    <meta property="og:type" content="website">
+    <meta name="twitter:title" content="BashCave | Open-Source Bash Library">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body style="background-color: rgb(33,37,41);color: rgb(230,230,230);font-family: 'Space Mono', monospace;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-uppercase text-center" style="margin-top: 20px;">BashCave</h1>
+                <p class="text-center">Open-Source Bash Library</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto" id="bashcave-repos" style="color: rgb(33,37,41);"></div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-6 mx-auto" style="color: rgb(33,37,41);">
+                <div class="card">
+                    <div class="card-body" id="bashcave-members"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center">Powered by&nbsp;<a href="https://www.lucked.site/">Lucked CA</a></p>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#bashcave-repos").loadRepositories("bashcave");
+        $("#bashcave-members").loadOrgMembers("bashcave");
+    });
+    </script>
+</body>
+
+</html>
